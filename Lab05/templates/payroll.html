@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Payroll System</title>
-    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 </head>
 <body>
 <h1>Payroll System</h1>
 
 <div class="content">
 
+    {% for data in payroll_data %}
     <div class="information">
 
         <div class="title">Invoice</div>
@@ -26,22 +26,8 @@
         </div>
 
     </div>
-    <div class="information">
 
-        <div class="title">Invoice</div>
-
-        <div class="info-headers">
-            <div>Part Name:</div>
-            <div>Quantity:</div>
-        </div>
-
-        <div class="info-details">
-            <div>Printer Cartridge</div>
-            <div>3</div>
-        </div>
-
-    </div>
-
+    {% endfor %}
 
 
 
