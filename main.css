@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+.content {
+    width:500px;
+    min-height: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    .information {
+        width:500px;
+        min-height: 100px;
+        border: 1px solid #aaa;
+        padding: 10px;
+        margin: 10px auto;
+
+        display: flex;
+        justify-content: space-evenly;
+        /*align-items: center;*/
+        flex-direction: row;
+
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .info-headers {
+        font-weight: bold;
+    }
+}
+
+
+
