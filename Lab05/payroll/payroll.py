@@ -4,6 +4,9 @@
 # Description: define the payroll data
 
 from payroll.payable import Payable
+from payroll invoice import Invoice
+
+
 
 def serialize_payroll(payable):
     return payable.to_dict()
@@ -16,4 +19,9 @@ def build_payroll_data():
         "invoice_count": total_invoices,
         "employee_count": total_employees,
         "total_gross": total_gross
+    
     }
+    # payables data 
+    for payable in payables
+    payables_data.append
+    serialize_payroll(payable)
