@@ -19,6 +19,9 @@ def build_payroll_data():
         "invoice_count": total_invoices,
         "employee_count": total_employees,
         "total_gross": total_gross
+        
+    invoice1 = Invoice("Printer Cartridge", 75.5, 3)
+    invoice2 = Invoice("Office Chair", 150.00, 2) 
     
     }
     # payables data 
